@@ -8,73 +8,10 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="lessons/script.js"></script>
 
+    <script src="jquery-3.6.0.min.js"></script>
+
     <title>Index</title>
 
-    <style>
-        /* Color Theme Swatches in Hex */
-        
-        .UI/UX-1-hex {
-            color: #260816;
-        }
-        
-        .UI/UX-2-hex {
-            color: #232426;
-        }
-        
-        .UI/UX-3-hex {
-            color: #04BF68;
-        }
-        
-        .UI/UX-4-hex {
-            color: #03A65A;
-        }
-        
-        .UI/UX-5-hex {
-            color: #155939;
-        }
-        /* Color Theme Swatches in RGBA */
-        
-        .UI/UX-1-rgba {
-            color: rgba(38, 8, 22, 1);
-        }
-        
-        .UI/UX-2-rgba {
-            color: rgba(34, 36, 38, 1);
-        }
-        
-        .UI/UX-3-rgba {
-            color: rgba(3, 191, 103, 1);
-        }
-        
-        .UI/UX-4-rgba {
-            color: rgba(3, 165, 89, 1);
-        }
-        
-        .UI/UX-5-rgba {
-            color: rgba(20, 89, 57, 1);
-        }
-        /* Color Theme Swatches in HSLA */
-        
-        .UI/UX-1-hsla {
-            color: hsla(331, 63, 9, 1);
-        }
-        
-        .UI/UX-2-hsla {
-            color: hsla(213, 4, 14, 1);
-        }
-        
-        .UI/UX-3-hsla {
-            color: hsla(151, 96, 38, 1);
-        }
-        
-        .UI/UX-4-hsla {
-            color: hsla(151, 96, 33, 1);
-        }
-        
-        .UI/UX-5-hsla {
-            color: hsla(151, 62, 21, 1);
-        }
-    </style>
 </head>
 
 
@@ -85,7 +22,7 @@
     <!--            Nav                -->
 
     <div class="w3-center w3-blue-gray w3-animate-top w3-hover-shadow">
-        <h1 class="w3-text-amber w3-panel w3-black w3-animate-fading w3-cursive">The Portal's portal&trade;</h1>
+        <h1 id="welcome" class="w3-text-amber w3-panel w3-black w3-animate-fading w3-cursive">The Portal's portal&trade;</h1>
         <a href="lessons/illustrator.html" class="w3-bar-item w3-btn w3-round w3-black"> illustrator</a>
         <br>
         <a href="lessons/photoshop.html" class="w3-bar-item w3-btn w3-round w3 w3-black"> Ψηφιακή Επεξεργασία Εικόνας</a>
@@ -111,7 +48,10 @@
         <button onclick='drop("drop2")' class="w3-button w3-center w3-round w3-red"> Feed </button>
         <div id="drop2" class="w3-panel w3-center w3-pale-blue w3-hide">
 
-            <iframe src="https://drive.google.com/file/d/13h675LTZ231fa3xwENkgZaR035xWRFru/preview" width="320" height="240" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/13h675LTZ231fa3xwENkgZaR035xWRFru/preview" width="320" height="1000" allow="autoplay"></iframe>
+
+
+            <iframe src="https://docs.google.com/document/d/e/2PACX-1vQFzS448PXFW7tbPDXnCsNin1W87fc3rfoGaHCi4I4bbBmMMWNo3TLcRjVGYWM2GzPdq_6MNXXm7sLS/pub?embedded=true" width=320 height=1000></iframe>
         </div>
     </div>
 
@@ -155,6 +95,45 @@
         </div>
     </div>
 
+    </div>
+
+    <div class="w3-container w3-center w3-blue-gray w3-animate-bottom w3-margin w3-center w3-padding-large ">
+        <button onclick='drop("drop3")' class="w3-button w3-center w3-round w3-red w3-large "> Google drive </button>
+        <div id="drop3" class="w3-panel w3-center w3-hide ">
+            <iframe class="w3-panel w3-teal w3-border-amber" src="https://drive.google.com/embeddedfolderview?id=13_Z8rNxXQY-JQGTYFlDx8MHMGvRf0eJH#list" width="260" height="240" frameborder="0" scrolling="no" style="overflow:hidden;"></iframe>
+            <br>
+            <a class="w3-btn w3-red" href="https://drive.google.com/drive/folders/13_Z8rNxXQY-JQGTYFlDx8MHMGvRf0eJH?usp=sharing">κοινός φάκελος</a>
+        </div>
+    </div>
+
+    <div class="w3-container w3-center w3-blue-gray w3-animate-bottom w3-margin w3-center w3-padding-large ">
+        <button onclick='drop("drop4")' class="w3-button w3-center w3-round w3-red w3-large "> Onedrive </button>
+        <div id="drop4" class="w3-panel w3-center w3-hide ">
+            <iframe src="https://onedrive.live.com/embed?cid=10FD124AA9058E9E&resid=10FD124AA9058E9E%212269&authkey=AKO75RIx4oa9lMc" width="160" height="120" frameborder="0" scrolling="no"></iframe>
+            <br>
+            <a class="w3-btn w3-red" href="https://drive.google.com/drive/folders/13_Z8rNxXQY-JQGTYFlDx8MHMGvRf0eJH?usp=sharing">κοινός φάκελος</a>
+        </div>
+    </div>
+
+
+    <script>
+        let fileHandle;
+
+
+
+        $(document).ready(function() {
+
+            $("div").click(function() {
+
+                $(this).fadeTo(25, 0.2).delay(25).fadeTo(25, 1.0);
+
+
+            })
+
+
+        })
+    </script>
+
     <div class="w3-panel w3-animate-right" <div id="disqus_thread"></div>
     <script>
         /**
@@ -176,7 +155,7 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-    </div>
+
 
 
 

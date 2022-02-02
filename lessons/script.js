@@ -19,3 +19,13 @@ function drop(id) {
     */
 
 }
+
+
+$(document).ready(function() {
+
+    alert("Ready!");
+
+    $('.w3-teal').fadeOut();
+
+
+});
