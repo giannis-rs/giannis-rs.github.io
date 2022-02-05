@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="lessons/script.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
 
     <script src="jquery-3.6.0.min.js"></script>
 
@@ -21,20 +22,23 @@
 
     <!--            Nav                -->
 
-    <div class="w3-center w3-blue-gray w3-animate-top w3-hover-shadow">
+    <div class=" w3-center w3-blue-gray w3-animate-top w3-hover-shadow">
         <h1 id="welcome" class="w3-text-amber w3-panel w3-black w3-animate-fading w3-cursive">The Portal's portal&trade;</h1>
-        <a href="lessons/illustrator.html" class="w3-bar-item w3-btn w3-round w3-black"> illustrator</a>
+        <a href="lessons/illustrator.html" class="w3-margin w3-bar-item w3-btn w3-round w3-black"> illustrator</a>
         <br>
-        <a href="lessons/photoshop.html" class="w3-bar-item w3-btn w3-round w3 w3-black"> Ψηφιακή Επεξεργασία Εικόνας</a>
+        <a href="lessons/photoshop.html" class="w3-margin w3-bar-item w3-btn w3-round w3 w3-black"> Ψηφιακή Επεξεργασία Εικόνας</a>
         <br>
-        <a href="" class="w3-bar-item w3-btn w3 w3-gray"> Εφαρμογή Ειδικότητας</a>
+        <a href="" class="w3-margin w3-bar-item w3-btn w3 w3-gray"> Εφαρμογή Ειδικότητας</a>
         <br>
-        <a href="" class="w3-bar-item w3-btn w3 w3-gray"> Χρώμα / Εκτύπωση</a>
+        <a href="" class="w3-margin w3-bar-item w3-btn w3 w3-gray"> Χρώμα / Εκτύπωση</a>
         <br>
-        <a href="" class="w3-bar-item w3-btn w3 w3-gray"> Σχέδιο</a>
+        <a href="" class="w3-margin w3-bar-item w3-btn w3 w3-gray"> Σχέδιο</a>
         <br>
-        <a href="" class="w3-bar-item w3-btn w3 w3-gray"> Ιστορία Τέχνης</a>
+        <a href="lessons/Istoria.html" class="w3-margin w3-bar-item w3-btn w3 w3-black"> Ιστορία Τέχνης</a>
         <br>
+        <br>
+        <br>
+
         <br>
         <a href="links/links.html" class="w3-bar-item w3-btn w3-round w3-black"> Χρήσιμα links</a>
 
@@ -46,12 +50,12 @@
     <div class="w3-panel w3-center w3-blue-gray w3-padding">
         <!--        Feed            -->
         <button onclick='drop("drop2")' class="w3-button w3-center w3-round w3-red"> Feed </button>
-        <div id="drop2" class="w3-panel w3-center w3-pale-blue w3-hide">
+        <div id="drop2" class="w3-panel w3-center w3-hide">
 
-            <iframe src="https://drive.google.com/file/d/13h675LTZ231fa3xwENkgZaR035xWRFru/preview" width="320" height="1000" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/13h675LTZ231fa3xwENkgZaR035xWRFru/preview" width="90%" height="1000" allow="autoplay"></iframe>
 
 
-            <iframe src="https://docs.google.com/document/d/e/2PACX-1vQFzS448PXFW7tbPDXnCsNin1W87fc3rfoGaHCi4I4bbBmMMWNo3TLcRjVGYWM2GzPdq_6MNXXm7sLS/pub?embedded=true" width=320 height=1000></iframe>
+            <iframe src="https://docs.google.com/document/d/e/2PACX-1vQFzS448PXFW7tbPDXnCsNin1W87fc3rfoGaHCi4I4bbBmMMWNo3TLcRjVGYWM2GzPdq_6MNXXm7sLS/pub?embedded=true" width="90%" height="800"></iframe> -->
         </div>
     </div>
 
@@ -88,6 +92,10 @@
             <h2>Complete design walkthroughs</h2>
             <iframe width="320 " height="240 " src="https://www.youtube.com/embed/4MxRhjHmiVw?list=PLXhpJzPcQFEVibG177hLqVt92ZVaIiaLM " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media;
                 gyroscope; picture-in-picture " allowfullscreen></iframe>
+            <br>
+            <h2>Σύντομα</h2>
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/QrNi9FmdlxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 
@@ -111,16 +119,12 @@
         <div id="drop4" class="w3-panel w3-center w3-hide ">
             <iframe src="https://onedrive.live.com/embed?cid=10FD124AA9058E9E&resid=10FD124AA9058E9E%212269&authkey=AKO75RIx4oa9lMc" width="160" height="120" frameborder="0" scrolling="no"></iframe>
             <br>
-            <a class="w3-btn w3-red" href="https://drive.google.com/drive/folders/13_Z8rNxXQY-JQGTYFlDx8MHMGvRf0eJH?usp=sharing">κοινός φάκελος</a>
+            <a class="w3-btn w3-red" href="https://1drv.ms/u/s!Ap6OBalKEv0QkV3jk0veheBCWW0Q?e=dy0pE8">κοινός φάκελος</a>
         </div>
     </div>
 
 
     <script>
-        let fileHandle;
-
-
-
         $(document).ready(function() {
 
             $("div").click(function() {
