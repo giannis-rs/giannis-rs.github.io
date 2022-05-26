@@ -4,7 +4,28 @@ function drop(id) {
     x.classList.toggle("w3-show");
 }
 
+function GetResponsiveSize() {
+    let res = GetRes();
+    let responsivesize = 0 // mobile S
 
+    if (res[0] >= 1440) { // Laptop-L
+        return 5;
+    }
+    if (res[0] >= 1024) { // Laptop
+        return 4;
+    }
+    if (res[0] >= 768) { // Tablet
+        return 3;
+    }
+    if (res[0] >= 425) { // mobile L
+        return 2;
+    }
+    if (res[0] >= 375) { // mobile M
+        return 1;
+    }
+    return 0;
+
+}
 
 function GetRes() {
     let w = window.screen.availWidth;
@@ -13,27 +34,10 @@ function GetRes() {
 }
 
 function ScaleElements() {
-    let res = GetRes();
+
     let VIDEOS = document.getElementsByClassName("rs-ytvid");
-    let responsivesize = 0 // mobile S
-
-
-    if (res[0] >= 375) { // mobile M
-        responsivesize = 1;
-    }
-    if (res[0] >= 425) { // mobile L
-        responsivesize = 2;
-    }
-    if (res[0] >= 768) { // Tablet
-        responsivesize = 3;
-    }
-    if (res[0] >= 1024) { // Laptop
-        responsivesize = 4;
-    }
-    if (res[0] >= 1440) { // Laptop-L
-        responsivesize = 5;
-    }
-
+    let responsivesize = GetResponsiveSize();
+    console.log(responsivesize);
 
     switch (responsivesize) { // Set the size
 
